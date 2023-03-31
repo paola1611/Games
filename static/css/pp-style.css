@@ -1,0 +1,100 @@
+body{
+    background-image: url(/static/img/5594016.jpg);
+}
+
+#bloque{
+    left: 50%;
+    top: 50%;
+    background: #232526;  
+    background: -webkit-linear-gradient(to right, #414345, #232526);  
+    background: linear-gradient(to right, #414345, #232526);
+    width: 900px;
+    height: 600px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 1%;
+    box-shadow: 0 0 20px black;
+    padding: 10px;
+    
+}
+
+.titulo{
+    position: absolute;
+    left: 550px;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.seccion_usuario{
+    background: #fdfffc;
+    width: 300px;
+    height: 97%;
+    border-radius: 1%;
+    position: absolute;
+}
+
+.bienvenido{
+    position: absolute;
+    bottom: 500px;
+    left: 55px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.icono{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #B3B3B3;
+    position: absolute;
+    left: 32%;
+    bottom: 400px;
+}
+
+.icono-tic-tac{
+    width: 220px;
+    height: 350px;
+    border-radius: 7%;
+    position: absolute;
+    background: #fff;
+    left: 350px;
+    bottom: 150px;
+}
+
+.icono-ppt{
+    width: 220px;
+    height: 350px;
+    border-radius: 7%;
+    position: absolute;
+    background: #fff;
+    left: 650px;
+    bottom: 150px;
+}
+
+.tic-tac{
+    position: absolute;
+    bottom: 100px;
+    left: 400px;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.ppt{
+    position: absolute;
+    bottom: 100px;
+    left: 640px;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#inicio{
+    position: absolute;
+    bottom: 17px;
+    left: 5%;
+}
+

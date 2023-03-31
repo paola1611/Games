@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/ppt-styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <title>Piedra, Papel o Tijeras</title>
+
+</head>
+<body>
+    <div class="bloque">
+        <h1 class="titulo">Piedra, Papel o Tijeras</h1>
+        <img class="puno" src="/static/img/puno.png" alt="puno">
+        <img class="papel" src="/static/img/palma.png" alt="papel">
+        <img class="tijeras" src="/static/img/tijeras (1).png" alt="tijeras">
+    <form action="/play/ppt/" method="POST">
+        <button class="btn btn-outline-danger piedra-btn" type="submit" name="choice" value="piedra">Piedra</button>
+        <button class="btn btn-outline-light papel-btn" type="submit" name="choice" value="papel">Papel</button>
+        <button class="btn btn-outline-warning tijeras-btn" type="submit" name="choice" value="tijeras">Tijeras</button>
+    </form>
+    <h1 class="resultado" >Resultado</h1>
+    <p class="user-choice" >Tu elección: {{ user_choice }}</p>
+    <p class="cpu-choice" >Jugada del CPU: {{ cpu_choice }}</p>
+    <p class="resultado-jugada" >{{ result }}</p>
+
+    <a class="back" href="{{url_for('pagina_juegos')}}">Volver a la pagina principal</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>

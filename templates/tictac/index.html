@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <form action="/play" method="post">
+        <label for="position">Seleccionar posición:</label>
+    <select name="posicion" id="position">
+        <option value="0">Arriba-Izquierda</option>
+        <option value="1">Arriba-Central</option>
+        <option value="2">Arriba-Derecha</option>
+        <option value="3">Medio-Izquierda</option>
+        <option value="4">Medio-Central</option>
+        <option value="5">Medio-Derecha</option>
+        <option value="6">Abajo-Izquierda</option>
+        <option value="7">Abajo-Central</option>
+        <option value="8">Abajo-Derecha</option>
+    </select>
+        <input type="submit" value="Jugar">
+    </form>
+
+    <table>
+        <tr>
+            <td><a href="/play?posicion=0">{{ tablero[0] }}</a></td>
+            <td><a href="/play?posicion=1">{{ tablero[1] }}</a></td>
+            <td><a href="/play?posicion=2">{{ tablero[2] }}</a></td>
+        </tr>
+        <tr>
+            <td><a href="/play?posicion=3">{{ tablero[3] }}</a></td>
+            <td><a href="/play?posicion=4">{{ tablero[4] }}</a></td>
+            <td><a href="/play?posicion=5">{{ tablero[5] }}</a></td>
+        </tr>
+        <tr>
+            <td><a href="/play?posicion=6">{{ tablero[6] }}</a></td>
+            <td><a href="/play?posicion=7">{{ tablero[7] }}</a></td>
+            <td><a href="/play?posicion=8">{{ tablero[8] }}</a></td>
+        </tr>
+    </table>
+</body>
+</html>

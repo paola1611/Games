@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/css/pp-style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <title></title>
+</head>
+<body>
+    <div id="bloque">
+        <label class="tic-tac" for="tic-tac">Tic tac toe</label>
+        <label class="ppt" for="ppt">Piedra, papel y tijeras</label>
+        <h2 class="titulo">Juegos</h2>
+        <a href="{{ url_for('index') }}">
+        <img class="icono-tic-tac" src="/static/img/tic-tac-toe (1).png" alt="tic-tac-toe">
+        </a>
+        <a href="{{ url_for('index_ppt') }}">
+        <img class="icono-ppt" src="/static/img/piedra-papel-tijeras (1).png" alt="ppt">
+        </a>
+        <div class="seccion_usuario">
+            <img class="icono" src="/static/img/hacker.png" alt="">
+
+            <h1 class="bienvenido"><strong>BIENVENIDO</strong> </h1>
+            <label class="usuario" for="name">Usuario:</label>
+            <h2 class="nombre">{{nombre}}</h2>
+            <a id="inicio" href="{{ url_for('inicio') }}">Volver al inicio de sesion</a>
+            <div class="seccion_juegos">      
+            </div>
+        </div>
+    </div>
+</body>
+</html>

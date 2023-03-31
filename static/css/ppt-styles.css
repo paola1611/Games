@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(/static/img/5594016.jpg);
+}
+
+.titulo{
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+}
+
+.resultado{
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    position: absolute;
+    left: 35%;
+    bottom: 250px;
+    
+}
+
+.user-choice{
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    position: absolute;
+    left: 10%;
+    bottom: 200px;
+    font-size: 16px;
+}
+
+.cpu-choice{
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    position: absolute;
+    left: 68%;
+    bottom: 200px;
+    font-size: 16px;
+}
+
+.resultado-jugada{
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    position: absolute;
+    left: 43%;
+    text-transform: uppercase;
+    bottom: 100px;
+    font-size: 18px;
+}
+
+.back{
+    position: absolute;
+    bottom: 15px;
+
+}
+
+.bloque{
+    left: 50%;
+    top: 50%;
+    background: #232526;  
+    background: -webkit-linear-gradient(to right, #414345, #232526);  
+    background: linear-gradient(to right, #414345, #232526);
+    width: 900px;
+    height: 600px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 1%;
+    box-shadow: 0 0 20px black;
+    padding: 10px;
+}
+
+.puno{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #B3B3B3;
+    position: absolute;
+    left: 30%;
+    bottom: 400px;
+}
+
+.papel{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #B3B3B3;
+    position: absolute;
+    left: 45%;
+    bottom: 400px;
+}
+
+.tijeras{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #B3B3B3;
+    position: absolute;
+    left: 60%;
+    bottom: 400px;
+}
+
+.piedra-btn{
+    position: absolute;
+    left: 32%;
+    bottom: 350px;
+}
+
+.papel-btn{
+    position: absolute;
+    left: 47%;
+    bottom: 350px;
+}
+
+.tijeras-btn{
+    position: absolute;
+    left: 63%;
+    bottom: 350px;
+}

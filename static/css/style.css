@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(/static/img/5594016.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#login{
+    left: 50%;
+    top: 50%;
+    background: #B3B3B3;
+    width: 320px;
+    height: 420px;
+    padding: 40px 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    box-shadow: 0 0 20px #a5a5a5;
+    
+}
+#login .icono{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+    background: #fff;
+}
+
+.form{
+    color: black;
+    padding: 2%;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.form label{
+    margin: 5px;
+    padding: 0;
+    display: block;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+}
+
+.form input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form input[type="text"],
+.form input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+}
+
+.form input[type="submit"]{
+    border: none;
+    outline: none;
+    background: #242325;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.form input[type="submit"]:hover{
+    background: #242325d3;
+    
+}
+
+.form a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    line-height: 20px;
+    color: black;
+}
+
+#registro{
+    position: absolute;
+    left: 40%;
+}
+
+.form a:hover{
+    color: #A40303;
+}
+
